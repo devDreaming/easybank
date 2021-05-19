@@ -1,0 +1,338 @@
+body {
+  font-size: 18px;
+  font-family: 'Public Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p, section, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #9698a6;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+main {
+  position: relative;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: white;
+  width: calc(100% - 2.8rem);
+  height: 4rem;
+  padding: 0 1.4rem;
+}
+
+nav .request-btn {
+  display: none;
+}
+
+nav .hamberger {
+  position: relative;
+  margin: 1.4rem;
+  height: 12px;
+}
+
+nav .hamberger .bar {
+  width: 24px;
+  height: 1px;
+  background: black;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  position: absolute;
+}
+
+nav .hamberger .top-bar {
+  top: 0;
+}
+
+nav .hamberger .middle-bar {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .hamberger .bottom-bar {
+  bottom: 0;
+}
+
+.header-menu {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+.request-btn {
+  margin: 1rem;
+}
+
+.request-btn a {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  display: inline;
+  padding: .8rem 2rem;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+}
+
+#hero {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#hero .title {
+  padding: 1.4rem 1rem;
+}
+
+#hero h1 {
+  font-weight: 300;
+  font-size: calc(2.1rem + 1vw);
+}
+
+#hero p {
+  padding: 1.2rem 0 1.4rem 0;
+}
+
+#hero .request-btn {
+  margin-bottom: 5rem;
+}
+
+#hero .images {
+  background-image: url(../images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#hero .images img {
+  padding: 0 1rem;
+  margin-top: -3.6rem;
+  max-width: calc(100% - 2rem);
+}
+
+#why-choose {
+  padding: 4rem 0 3rem 0;
+  text-align: center;
+  background-color: #f3f4f6;
+}
+
+#why-choose h2, #why-choose h3, #why-choose p {
+  font-weight: 300;
+}
+
+#why-choose h2 {
+  font-size: calc(28px + 1vw);
+  padding-bottom: 1rem;
+}
+
+#why-choose .title {
+  padding: 0 1.2rem 2.5rem 1.2rem;
+}
+
+#why-choose .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#why-choose .feature {
+  padding: 1rem;
+  max-width: 25rem;
+}
+
+#why-choose .feature img {
+  margin-bottom: 1.2rem;
+}
+
+#why-choose .feature h3 {
+  font-size: calc(15px + 1vw);
+  margin-bottom: 1.2rem;
+}
+
+#latest-articals {
+  background-color: #fafafa;
+  padding: 5rem 1.5rem 4rem 1.5rem;
+}
+
+#latest-articals h4 {
+  font-weight: 300;
+  font-size: calc(28px + 1vw);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+#latest-articals .articals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#latest-articals .artical {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+#latest-articals .artical .content {
+  padding: 1.5rem;
+}
+
+#latest-articals .artical .author {
+  font-size: 10px;
+}
+
+#latest-articals .artical .title {
+  font-weight: 400;
+  line-height: 1.2;
+  padding: .5rem 0;
+  font-size: 16px;
+  color: #2d314d;
+}
+
+#latest-articals .artical p:last-child {
+  font-size: 12px;
+}
+
+#latest-articals img {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+footer {
+  background-color: #2d314d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.2rem 0 2.7rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer .footer-left {
+  text-align: center;
+}
+
+footer .social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 12rem;
+  padding: 1.7rem 0;
+}
+
+footer .social-menu i {
+  font-size: 28px;
+}
+
+footer .menu {
+  text-align: center;
+}
+
+footer .menu li a {
+  line-height: 2.5;
+  font-size: 14px;
+  color: #f3f4f6;
+}
+
+footer .request-btn {
+  text-align: center;
+  margin: 2.2rem 0 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .hamberger,
+  #mobile-menu {
+    display: none;
+  }
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-menu a {
+    padding: .5rem 1rem;
+    color: #9698a6;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #why-choose {
+    text-align: left;
+  }
+  #why-choose .features {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  #latest-articals .articals {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  #latest-articals .artical img {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
